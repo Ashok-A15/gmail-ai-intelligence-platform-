@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { google } from 'googleapis';
 
-export async function GET() {
+export async function GET(request: Request) {
   const clientId = process.env.GOOGLE_CLIENT_ID;
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
   
@@ -12,8 +12,10 @@ export async function GET() {
     );
   }
 
-  // Determine redirect URI - default to localhost:3000
-  const redirectUri = 'http://localhost:3000/api/auth/callback';
+  // Dynamically determine redirect URI based on the request host
+  const host = request.headers.get('host') || 'localhost:3000';
+  const protocol = host.includes('localhost') ? 'http' : 'https';
+  const redirectUri = `${protocol}://${host}/api/auth/callback`;
 
   const oauth2Client = new google.auth.OAuth2(
     clientId,
