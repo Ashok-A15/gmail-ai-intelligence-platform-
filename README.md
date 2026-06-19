@@ -12,7 +12,7 @@ https://gmail-ai-intelligence-platform-99odf61ep.vercel.app/
 
 📂 GitHub Repository
 
-https://github.com/Ashok-A15/gmail-ai-intelligence-platform
+https://github.com/Ashok-A15/gmail-ai-intelligence-platform-
 
 ---
 
@@ -222,8 +222,8 @@ gmail-ai-intelligence-platform/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/Ashok-A15/gmail-ai-intelligence-platform.git
-cd gmail-ai-intelligence-platform
+git clone https://github.com/Ashok-A15/gmail-ai-intelligence-platform-.git
+cd gmail-ai-intelligence-platform-
 ```
 
 ### Install Dependencies
