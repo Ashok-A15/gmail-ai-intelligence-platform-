@@ -16,6 +16,24 @@ https://github.com/Ashok-A15/gmail-ai-intelligence-platform-
 
 ---
 
+## OAuth Notice
+
+This application uses Gmail API sensitive scopes and is currently running in Google OAuth Testing Mode.
+
+During sign-in, Google may display:
+
+"Google hasn't verified this app"
+
+To continue:
+
+1. Click **Advanced**
+2. Click **"Go to gmail-ai-intelligence-platform (unsafe)"**
+3. Complete Google Sign-In
+
+This is expected behavior for non-verified development applications using Gmail API scopes.
+
+---
+
 ## Project Overview
 
 This project was developed as part of the Repeatless AI Automation Executive Technical Assessment.
